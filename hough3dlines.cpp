@@ -246,6 +246,7 @@ int main(int argc, char ** argv) {
   // print header info if necessary
   if (opt_outformat == format_gnuplot) {
     fprintf(outfile, "set datafile separator '%c'\n"
+            "pause mouse\n"
             "set parametric\n"
             "set xrange [%f:%f]\n"
             "set yrange [%f:%f]\n"
